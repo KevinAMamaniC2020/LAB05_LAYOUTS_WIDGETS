@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClaustoFragment">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="401dp"
+        android:layout_height="152dp"
+        android:background="@drawable/contenedor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgCatedral"
+        android:layout_width="106dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/claustro"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.283"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+
+    <TextView
+        android:id="@+id/txtTituloCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Claustros de La Compañía"
+        android:textAlignment="center"
+        android:textColor="#FFC107"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toEndOf="@+id/imgCatedral"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <TextView
+        android:id="@+id/txtBiografia"
+        android:layout_width="254dp"
+        android:layout_height="105dp"
+        android:text="Este conjunto arquitectónico, construido enteramente de sillar (piedra blanca, volcánica, de Arequipa), es una pequeña joya para los ojos: en el centro de la patio, una fuente, rodeada de arcadas grabadas con motivos florales. Hoy en día, este patio es el hogar de tiendas de artesanía de alta gama. En el primer piso, un elegante bar que vale la pena desviarse."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toEndOf="@+id/imgCatedral"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloCat"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
